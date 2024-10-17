@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background-cat">
+        <div class="welcome-container">
+            <h2>¡GRUP MOT te da la Bienvenida, {{ username }}!</h2>
+            <p>Pronto te enviaremos nuevas noticias sobre motos sñr {{ username }}</p>
+            <img src="{{ url_for('static', filename='imagenes/fondo3.jfif') }}" alt="honda" class="welcome-cat">
+            <a href="{{ url_for('logout') }}" class="logout-button">Cerrar sesión</a>
+        </div>
+    </div>
+</body>
+</html>
